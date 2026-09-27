@@ -19,9 +19,11 @@ public class InventoryServiceApplication {
         return args -> {
             productReposetory.save(Product.builder()
                             .nom("p1")
+                            .price(1000*Math.random()*100)
                     .build());
             productReposetory.save(Product.builder()
                     .nom("p2")
+                    .price(1000*Math.random()*100)
                     .build());
         };
     }

@@ -17,5 +17,7 @@ import lombok.NoArgsConstructor;
 public class Product {
     @Id @GeneratedValue
     private Long id;
+    private double price;
     private String nom;
+
 }
